@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep-Facade-Inspector | AI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="app-header">
+    <div class="header-content">
+        <h1>Deep-Facade-Inspector <span class="badge">M.Sc. Research</span></h1>
+        <p>Computer Vision Framework for Automated Building Diagnostics</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="upload-area" id="drop-zone">
+        <div class="upload-icon">📸</div>
+        <h3>Ingest Facade Data</h3>
+        <p>Drag & drop high-resolution drone imagery (JPG, PNG)</p>
+        <button class="btn-primary">Initialize Scan</button>
+    </section>
+
+    <section class="analysis-grid">
+        <div class="card viewport-card">
+            <h3>Neural Detection Viewport</h3>
+            <div class="viewport-placeholder">
+                <div class="scanning-line"></div>
+                <span>[ AI INFERENCE PREVIEW ]</span>
+            </div>
+        </div>
+
+        <div class="card metrics-card">
+            <h3>Diagnostic Analytics</h3>
+            <div class="metric-item">
+                <label>Processing Status:</label>
+                <span class="status-tag">System Ready</span>
+            </div>
+            <ul class="stats-list">
+                <li><strong>Detected Pathologies:</strong> 0</li>
+                <li><strong>Inference Latency:</strong> -- ms</li>
+                <li><strong>Mean Confidence:</strong> -- %</li>
+            </ul>
+            <hr>
+            <p class="disclaimer">Architecture Blueprint v1.0 - Proprietary Model Layer Omitted.</p>
+        </div>
+    </section>
+</main>
+
+<script>
+    // Logic Mockup: This simulates the connection to the Python/PyTorch backend
+    document.getElementById('drop-zone').onclick = () => {
+        alert("Architectural UI Stub: In production, this interface communicates with the Python API (FastAPI) to run the CV models.");
+    };
+    console.log("Deep-Facade-Inspector: Web Sub-system active.");
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
